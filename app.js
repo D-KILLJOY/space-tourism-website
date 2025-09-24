@@ -31,7 +31,7 @@ return await response.json();
 
 }
 
-if (window.location.pathname === "/destination.html") {
+if (window.location.pathname === "/destination.html" || window.location.pathname === "/destination") {
 
 async function initDisp() {
     
@@ -104,7 +104,7 @@ initDisp();
 }
 
 
-if (window.location.pathname === "/crew.html") {
+if (window.location.pathname === "/crew.html" || window.location.pathname === "/crew") {
 
 async function initDisp() {
     
@@ -172,7 +172,7 @@ initDisp();
 
 
 
-if (window.location.pathname === "/technology.html") {
+if (window.location.pathname === "/technology.html" || window.location.pathname === "/technology") {
 
 async function initDisp() {
 
