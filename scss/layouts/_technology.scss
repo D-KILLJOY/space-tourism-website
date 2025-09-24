@@ -1,0 +1,241 @@
+@use "../globals/boilerplate" as b ;
+
+
+.technology {
+    min-height:100vh ;
+
+    background: url("../assets/technology/background-technology-mobile.jpg") center/cover no-repeat;
+
+    @media (min-width:720px) {
+        background: url("../assets/technology/background-technology-tablet.jpg") center/cover no-repeat;
+    }
+
+    @media (min-width:990px) {
+        background: url("../assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
+    }
+
+}
+
+.tech__main__con {
+    padding:2.4rem 0 4.8rem;
+    max-width: 144rem;
+    margin-inline: auto;
+
+    @media (min-width:720px) {
+        padding: 4rem 0 4rem;
+    }
+
+    @media (min-width:1220px) {
+        padding: 4.8rem 0 4.8rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.tech__intro__text {
+    margin-inline: 4rem;
+
+    @media (min-width:1220px) {
+    margin: 0;
+    }
+}
+
+.tech__con {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 127.5rem;
+    width: 100%;
+}
+
+.tech__dets__con {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    @media (min-width:1220px) {
+    flex-direction: row-reverse;
+    }
+}
+
+.tech__img__con {
+    padding-top: 6.4rem;
+
+    @media (min-width:1220px) {
+    padding: 0;
+    width: 100%;
+    max-width: 60.8rem;
+    }
+}
+
+.desktop__img {
+    display: none;
+
+    @media (min-width:1220px) {
+    display: block;
+    }
+}
+
+.tablet__img {
+    display: none;
+
+    @media (min-width:720px) {
+        display: block; 
+    }
+
+    @media (min-width:1220px) {
+    display: none;
+    }
+}
+
+.mobile__img {
+    display: block;
+    
+    @media (min-width:720px) {
+        display: none;
+        
+    }
+
+    
+}
+
+.tech__dets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 2.4rem;
+
+    @media (min-width:1220px) {
+    flex-direction: row; 
+    width: unset;
+    gap: 6.4rem;
+    padding: 0;
+    }
+}
+
+.tech__nav__con {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+
+    @media (min-width:720px) {
+    width: 100%;
+    max-width: 51.2rem; 
+    }
+
+    @media (min-width:1220px) {
+    flex-direction: column; 
+    width: unset;
+    }
+}
+
+.tech__nav__item {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    border-radius: 50%;
+    color: b.$white;
+    font-size: 1.8rem;
+    font-family: b.$Bellefair;
+    font-weight: 400;
+    display: grid;
+    place-content: center;
+    transition: border-color .5s;
+
+    &:hover {
+        cursor: pointer;
+        transition: .5s;
+        border-color: b.$white;
+    }
+
+    &--active {
+        background-color: b.$white;
+        color: b.$blue-900;
+    }
+
+    @media (min-width:720px) {
+    width: 5.6rem;
+    height: 5.6rem;
+    font-size: 2.4rem;  
+    }
+
+    @media (min-width:1220px) {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3.2rem;  
+    }
+}
+
+.tech__details {
+    @media (min-width:720px) {
+    width: 100%;
+    max-width: 51.2rem; 
+    }
+
+    @media (min-width:1220px) {
+    max-width: 49.1rem; 
+    }
+}
+
+.tech__cat {
+    font-family: b.$Bellefair;
+    font-size: 1.8rem;
+    color: b.$white;
+    opacity: 50.42%;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @media (min-width:720px) {
+    font-size: 2.4rem; 
+    }
+
+    @media (min-width:1220px) {
+    font-size: 3.2rem; 
+    text-align: left;
+    }
+
+
+}
+
+.tech__name {
+    font-family: b.$Bellefair;
+    font-size: 2.4rem;
+    color: b.$white;
+    text-align: center;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+
+    @media (min-width:720px) {
+    font-size: 4rem; 
+    }
+
+    @media (min-width:1220px) {
+    font-size: 5.6rem; 
+    text-align: left;
+    margin-bottom: 2.4rem;
+    }
+}
+
+.tech__desc {
+    font-family: b.$Barlow-400;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: b.$blue-300;
+    text-align: center;
+
+
+    @media (min-width:720px) {
+    font-size: 1.6rem; 
+    }
+
+    @media (min-width:1220px) {
+    font-size: 1.8rem; 
+    text-align: left;
+    }
+}
